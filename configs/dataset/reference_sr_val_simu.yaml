@@ -1,0 +1,21 @@
+dataset:
+  target: dataset.LRHRRef.LRHRRefDataset
+  params:
+    # Path to the file list.
+    dataroot: /mnt/massive/wangce/SGDM/dataset/MBD
+
+    l_resolution: 16
+    r_resolution: 256
+    split: "val"
+    data_len: 300
+    use_txt: true
+
+
+data_loader:
+  batch_size: 1
+  shuffle: false
+  num_workers: 1
+  drop_last: false
+
+batch_transform:
+  target: dataset.batch_transform.IdentityBatchTransform

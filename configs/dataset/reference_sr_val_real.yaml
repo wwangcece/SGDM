@@ -1,0 +1,28 @@
+dataset:
+  target: dataset.LRHRRef.LRHRRefDataset
+  params:
+    # Path to the file list.
+    # dataroot: /mnt/massive/wangce/map-sat/dataset/S2-Arcgis/random_hr_val/val-flower
+    dataroot: /mnt/massive/wangce/SGDM/dataset/S2-Arcgis/val
+    # dataroot: /mnt/massive/wangce/map-sat/dataset/Synthetic-v18-45k/exp-val
+    # dataroot: /mnt/massive/wangce/map-sat/dataset/S2-Arcgis/forest_hr_val
+    # dataroot: /mnt/massive/wangce/map-sat/dataset/Synthetic-v18-45k/val
+    # dataroot: /mnt/massive/wangce/map-sat/dataset/S2-Arcgis/shuffle_hr_val
+    # style_path: /mnt/massive/wangce/SGDM/dataset/Synthetic-v18-45k/train/hr_256/18_127520_81817.png
+    # style_path: /mnt/massive/wangce/SGDM/dataset/S2-Arcgis/val/hr_256
+    # style_path: /mnt/massive/wangce/SGDM/dataset/S2-Arcgis/shuffle_hr_val/shuffle_hr_256
+    l_resolution: 16
+    r_resolution: 256
+    split: "val"
+    data_len: 390
+    use_txt: true
+
+
+data_loader:
+  batch_size: 16
+  shuffle: false
+  num_workers: 16
+  drop_last: false
+
+batch_transform:
+  target: dataset.batch_transform.IdentityBatchTransform

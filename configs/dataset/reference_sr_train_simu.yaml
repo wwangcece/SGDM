@@ -1,0 +1,20 @@
+dataset:
+  target: dataset.LRHRRef.LRHRRefDataset
+  params:
+    # Path to the file list.
+    dataroot: /mnt/massive/wangce/SGDM/dataset/Synthetic-v18-45k/train
+
+    l_resolution: 8
+    r_resolution: 256
+    split: "train"
+    data_len: -1
+    use_txt: true
+
+data_loader:
+  batch_size: 4
+  shuffle: false
+  num_workers: 4
+  drop_last: false
+
+batch_transform:
+  target: dataset.batch_transform.IdentityBatchTransform
