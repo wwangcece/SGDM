@@ -60,7 +60,7 @@ First please modify the validation data set configuration files at configs/datas
 
 ```shell
 python inference_refsr_batch_simu.py \
---ckpt checkpoints/SGDM-syn \
+--ckpt checkpoints/SGDM-syn.ckpt \
 --config configs/model/refsr_simu.yaml \
 --val_config configs/dataset/reference_sr_val_simu.yaml \
 --output path/to/your/outpath \
@@ -73,7 +73,7 @@ python inference_refsr_batch_simu.py \
 For style sampling
 ```shell
 python inference_refsr_batch_real.py \
---ckpt checkpoints/SGDM-real \
+--ckpt checkpoints/SGDM-real.ckpt \
 --config configs/model/refsr_real.yaml \
 --val_config configs/dataset/reference_sr_val_real.yaml \
 --sample_style true \
@@ -87,7 +87,7 @@ python inference_refsr_batch_real.py \
 For style guidance
 ```shell
 python inference_refsr_batch_real.py \
---ckpt checkpoints/SGDM-real \
+--ckpt checkpoints/SGDM-real.ckpt \
 --config configs/model/refsr_real.yaml \
 --val_config configs/dataset/reference_sr_val_real.yaml \
 --output 50 path/to/your/outpath \
