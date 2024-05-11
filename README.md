@@ -8,13 +8,13 @@
 
 ## :book:Table Of Contents
 
-- [Visual Results On Real-world Images](#visual_results)
+- [Visual Results](#visual_results)
 - [Installation](#installation)
 - [Pretrained Models](#pretrained_models)
 - [Inference](#inference)
 - [Train](#train)
 
-## <a name="visual_results"></a>:eyes:Visual Results On Real-world Images
+## <a name="visual_results"></a>:eyes:Visual Results
 
 <!-- <details close>
 <summary>General Image Restoration</summary> -->
