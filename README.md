@@ -1,6 +1,6 @@
 ## Semantic Guided Large Scale Factor Remote Sensing Image Super-resolution with Generative Diffusion Prior
 
-[Paper](https://arxiv.org/abs/......)
+[Paper](https://arxiv.org/abs/2405.07044)
 
 <p align="center">
     <img src="assets/architecture.png" style="border-radius: 15px">
