@@ -103,7 +103,12 @@ TBD
 Please cite us if our work is useful for your research.
 
 ```
-...
+@article{wang2024semantic,
+  title={Semantic Guided Large Scale Factor Remote Sensing Image Super-resolution with Generative Diffusion Prior},
+  author={Wang, Ce and Sun, Wanjie},
+  journal={arXiv preprint arXiv:2405.07044},
+  year={2024}
+}
 ```
 
 ## Acknowledgement
