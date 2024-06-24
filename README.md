@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 Download the model and place it in the checkpoints/ folder
 
-## <a name="dataset"></a>:dna:Dataset
+## <a name="dataset"></a>:Bar Chart:Dataset
 
 [Google Drive](https://drive.google.com/file/d/1HIrHj1qurTTuRyUpYNZRxbmpjUfdO6dN/view?usp=drive_link)
 
