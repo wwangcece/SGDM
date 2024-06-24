@@ -11,6 +11,7 @@
 - [Visual Results](#visual_results)
 - [Installation](#installation)
 - [Pretrained Models](#pretrained_models)
+- [Dataset](#dataset)
 - [Inference](#inference)
 - [Train](#train)
 
@@ -50,6 +51,12 @@ pip install -r requirements.txt
 [Google Drive](https://drive.google.com/drive/folders/1BTNz0mXGBPpWqqNGq59Bx6_KUFMCWsRq?usp=sharing)
 
 Download the model and place it in the checkpoints/ folder
+
+## <a name="dataset"></a>:dna:Dataset
+
+[Google Drive](https://drive.google.com/file/d/1HIrHj1qurTTuRyUpYNZRxbmpjUfdO6dN/view?usp=drive_link)
+
+For copyright reasons, we can only provide the geographic sampling points in the data and the download scripts of the remote sensing images. To download vector maps, you need to register a [maptiler](https://www.maptiler.com/) account and subscribe to the package.
 
 ## <a name="inference"></a>:crossed_swords:Inference
 
