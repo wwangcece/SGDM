@@ -1,5 +1,5 @@
-## Semantic Guided Large Scale Factor Remote Sensing Image Super-resolution with Generative Diffusion Prior
-Officical code for [Paper](https://arxiv.org/abs/2405.07044)
+## SGDM (ISPRS-JPRS 2024)
+Officical code for "[Semantic Guided Large Scale Factor Remote Sensing Image Super-resolution with Generative Diffusion Prior](https://arxiv.org/abs/2405.07044)", **ISPRS-JPRS**, 2024
 
 <p align="center">
     <img src="assets/architecture.png" style="border-radius: 15px">
