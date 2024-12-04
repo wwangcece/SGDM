@@ -79,12 +79,13 @@ class ControlLDM(LatentDiffusion):
         learning_rate: float,
         disable_preprocess=False,
         frozen_diff=True,
+        use_map=True,
         *args,
         **kwargs,
     ) -> "ControlLDM":
         super().__init__(*args, **kwargs)
         # instantiate control module
-        self.adapter = My_Adapter()
+        self.adapter = My_Adapter(use_map=use_map)
         self.sr_key = sr_key
         self.ref_key = ref_key
         self.disable_preprocess = disable_preprocess
