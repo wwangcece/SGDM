@@ -73,6 +73,7 @@ python inference_refsr_batch_simu.py \
 --steps 50 \
 --device cuda:0
 ```
+Meanwhile, our model also supports inference in the absence of vector maps. All you need to do is set the use_map of the model configuration file (configs/model/refsr_simu.yaml) to False and inference using the sync_x32_no_map.ckpt pre-training weight.
 
 #### Inference for real-world dataset
 
