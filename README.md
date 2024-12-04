@@ -71,7 +71,7 @@ python inference_refsr_batch_simu.py \
 --val_config configs/dataset/reference_sr_val_simu.yaml \
 --output path/to/your/outpath \
 --steps 50 \
---device cuda:0 \
+--device cuda:0
 ```
 
 #### Inference for real-world dataset
@@ -87,7 +87,7 @@ python inference_refsr_batch_real.py \
 --ckpt_flow_std checkpoints/flow_std \
 --output path/to/your/outpath \
 --steps 50 \
---device cuda:0 \
+--device cuda:0
 ```
 
 For style guidance
@@ -98,11 +98,38 @@ python inference_refsr_batch_real.py \
 --val_config configs/dataset/reference_sr_val_real.yaml \
 --output 50 path/to/your/outpath \
 --steps 50 \
---device cuda:0 \
+--device cuda:0
 ```
 
 ## <a name="train"></a>:stars:Train
-TBD
+Firstly load pretrained SD parameters:
+```shell
+python scripts/init_weight_refsr.py \
+--cldm_config configs/model/refsr_simu.yaml \
+--sd_weight checkpoints/v2-1_512-ema-pruned.ckpt \
+--output checkpoints/init_weight/init_weight-refsr-simu.pt
+```
+Secondly please modify the training configuration files at configs/train_refsr_simu.yaml.
+Finally you can start training:
+```shell
+python train.py \
+--config configs/train_refsr_simu.yaml
+```
+
+For training SGDM+ (real-world version), you just need to replace the model configuration file with configs/model/refsr_real.yaml and the training configuration file with configs/train_refsr_real.yaml. And one more step is to train the style normalizing flow model.
+Firstly please collect all the style vectors in the training dataset for model training:
+```shell
+python model/Flows/save_mu_sigama.py \
+--ckpt path_to_saved_ckpt \
+--data_config configs/dataset/reference_sr_train_real.yaml \
+--savepath model/Flows/results \
+--device cuda:1
+```
+Then you can train the  style normalizing flow model:
+```shell
+python model/Flows/mu_sigama_estimate_normflows_single.py
+```
+The saved model parameters can be used for style sampling.
 
 ## Citation
 
