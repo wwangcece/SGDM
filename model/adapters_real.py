@@ -3,7 +3,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from PIL import Image
-from .vgg16 import SR_Ref_Encoder_Spade, AdaIN_Encoder
+from .vgg16 import SR_Ref_Encoder_Spade, AdaIN_Encoder, SR_Encoder
 from ldm.modules.diffusionmodules.util import (
     linear,
     zero_module,
@@ -200,7 +200,7 @@ class My_Adapter(nn.Module):
         cin=3*64,
         ksize=1,
         sk=True,
-        use_conv=True,
+        use_conv=True
     ):
         super(My_Adapter, self).__init__()
         self.channels = channels
