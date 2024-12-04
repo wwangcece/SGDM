@@ -137,15 +137,17 @@ class My_Adapter(nn.Module):
         ksize=1,
         sk=True,
         use_conv=True,
+        use_map=True
     ):
         super(My_Adapter, self).__init__()
         self.channels = channels
         self.nums_rb = nums_rb
-        self.merge_encoder = SR_Ref_Encoder_Spade(out_channel=cin*2)
-        # w/o-map branch
-        # self.merge_encoder = SR_Encoder(out_channel=cin*2)
-        # w/o-sgm
-        # self.merge_encoder = SR_Ref_Encoder(out_channel=cin*2)
+        self.use_map = use_map
+        self.merge_encoder = (
+            SR_Ref_Encoder_Spade(out_channel=cin * 2)
+            if use_map
+            else SR_Encoder(out_channel=cin * 2)
+        )
         self.conv_in = nn.Conv2d(cin*2, channels[0], 3, 1, 1)
         self.body = []
         for i in range(len(channels) - 1):
@@ -183,8 +185,7 @@ class My_Adapter(nn.Module):
 
     def forward(self, sr, ref):
         # unshuffle
-        x = self.merge_encoder(sr, ref)
-        # x = self.merge_encoder(sr)
+        x = self.merge_encoder(sr, ref) if self.use_map else self.merge_encoder(sr)
         # extract features
         features = []
         x = self.conv_in(x)
