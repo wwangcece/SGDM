@@ -47,7 +47,7 @@ pip install -r requirements.txt
 
 ## <a name="pretrained_models"></a>:dna:Pretrained Models
 
-[Google Drive](https://drive.google.com/drive/folders/1BTNz0mXGBPpWqqNGq59Bx6_KUFMCWsRq?usp=sharing)
+[MEGA](https://mega.nz/folder/DUoFyDAb#Hf6u9z57-aiLr5RLL5j_ZA)
 
 Download the model and place it in the checkpoints/ folder
 
@@ -83,8 +83,8 @@ python inference_refsr_batch_real.py \
 --config configs/model/refsr_real.yaml \
 --val_config configs/dataset/reference_sr_val_real.yaml \
 --sample_style true \
---ckpt_flow_mean checkpoints/flow_tanh_mini_mean \
---ckpt_flow_std checkpoints/flow_tanh_mini_std \
+--ckpt_flow_mean checkpoints/flow_mean \
+--ckpt_flow_std checkpoints/flow_std \
 --output path/to/your/outpath \
 --steps 50 \
 --device cuda:0 \
