@@ -4,7 +4,7 @@ Officical code for "[Semantic Guided Large Scale Factor Remote Sensing Image Sup
 <p align="center">
     <img src="assets/architecture.png" style="border-radius: 15px">
 </p>
-
+** PS: we have opened source the model parameters and configuration in the absence of vector maps. Welcome to quote and compare ~ **
 ## :book:Table Of Contents
 
 - [Visual Results](#visual_results)
