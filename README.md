@@ -59,6 +59,8 @@ Download the model and place it in the checkpoints/ folder
 
 For copyright reasons, we can only provide the geographic sampling points in the data and the download scripts of the remote sensing images. To download vector maps, you need to register a [maptiler](https://www.maptiler.com/) account and subscribe to the package.
 
+In order to make it easier for you to understand our method, we have provided some toy examples for you to use! [Google Drive](https://drive.google.com/file/d/1AMKDjz9TdfJkORsw23T6hz_-rx4y6y_W/view?usp=drive_link).
+
 ## <a name="inference"></a>:crossed_swords:Inference
 
 <a name="general_image_inference"></a>
