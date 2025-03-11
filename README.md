@@ -1,5 +1,5 @@
-## SGDM (ISPRS-JPRS 2024)
-Officical code for "[Semantic Guided Large Scale Factor Remote Sensing Image Super-resolution with Generative Diffusion Prior](https://arxiv.org/abs/2405.07044)", **ISPRS-JPRS**, 2024
+## SGDM (ISPRS-JPRS 2025)
+Officical code for "[Semantic Guided Large Scale Factor Remote Sensing Image Super-resolution with Generative Diffusion Prior](https://www.sciencedirect.com/science/article/pii/S0924271624004714)", **ISPRS-JPRS**, 2025
 
 <p align="center">
     <img src="assets/architecture.png" style="border-radius: 15px">
@@ -141,11 +141,14 @@ The saved model parameters can be used for style sampling.
 Please cite us if our work is useful for your research.
 
 ```
-@article{wang2024semantic,
-  title={Semantic Guided Large Scale Factor Remote Sensing Image Super-resolution with Generative Diffusion Prior},
+@article{wang2025semantic,
+  title={Semantic guided large scale factor remote sensing image super-resolution with generative diffusion prior},
   author={Wang, Ce and Sun, Wanjie},
-  journal={arXiv preprint arXiv:2405.07044},
-  year={2024}
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={220},
+  pages={125--138},
+  year={2025},
+  publisher={Elsevier}
 }
 ```
 
