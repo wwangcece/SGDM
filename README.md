@@ -1,9 +1,27 @@
-## SGDM (ISPRS-JPRS 2025)
-Officical code for "[Semantic Guided Large Scale Factor Remote Sensing Image Super-resolution with Generative Diffusion Prior](https://www.sciencedirect.com/science/article/pii/S0924271624004714)", **ISPRS-JPRS**, 2025
+<h2 align="center">
+Semantic-Guided Large-Scale Factor Remote Sensing Image Super-Resolution<br>
+with Generative Diffusion Prior
+</h2>
+
+<h3 align="center">
+📍 ISPRS Journal of Photogrammetry and Remote Sensing, 2025
+</h3>
 
 <p align="center">
-    <img src="assets/architecture.png" style="border-radius: 15px">
+<a href="https://www.sciencedirect.com/science/article/pii/S0924271624004714">
+📄 Paper Link
+</a>
 </p>
+
+<p align="center">
+<strong>Ce Wang</strong><sup>1</sup>, 
+<strong>Wanjie Sun</strong><sup>1</sup>
+</p>
+
+<p align="center">
+<sup>1</sup> School of Remote Sensing and Information Engineering, Wuhan University
+</p>
+
 
 **PS: we have opened source the model parameters and configuration in the absence of vector maps. Welcome to quote and compare**
 
