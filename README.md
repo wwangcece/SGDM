@@ -1,11 +1,4 @@
-<h2 align="center">
-Semantic-Guided Large-Scale Factor Remote Sensing Image Super-Resolution<br>
-with Generative Diffusion Prior
-</h2>
-
-<h3 align="center">
-📍 ISPRS Journal of Photogrammetry and Remote Sensing, 2025
-</h3>
+<h2 align="center">[ISPRS 2025] Semantic-Guided Large-Scale Factor Remote Sensing Image Super-Resolution with Generative Diffusion Prior</h2>
 
 <p align="center">
 <a href="https://www.sciencedirect.com/science/article/pii/S0924271624004714">
